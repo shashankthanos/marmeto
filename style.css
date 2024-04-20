@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  width: 1280px;
+  height: 843px;
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+.photo {
+  width: 587px;
+  height: 691px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: Hug (520px)px;
+  height: Hug (115px)px;
+  gap: 20px;
+}
+
+#price {
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41.15px;
+  text-align: left;
+  color: rgba(58, 73, 128, 1);
+
+}
+
+#discount {
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25.41px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  width: 115px;
+  height: 115px;
+  border-radius: 6px 0px 0px 0px;
+  border: 3px 0px 0px 0px;
+}
+
+.side {
+  margin-left: 5%;
+  width: 500px;
+}
+
+.marmeto {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(185, 187, 191, 1);
+}
+
+.title {
+  font-family: Inter;
+}
+
+.color-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.color-div {
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  border: 2px solid orange;
+}
+
+.tick-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.selected .tick-mark {
+  display: block;
+}
+
+.tick-mark::after {
+  content: '\2713';
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+.size-button {
+  padding: 10px;
+  margin-left: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+
+
+.btns {
+  margin-top: 3%;
+  width: 497px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart {
+  width: 309px;
+  height: 59px;
+  border-radius: 50px;
+  background: rgba(58, 73, 128, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.counter {
+  width: 169px;
+  height: 59px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#description {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(163, 163, 163, 1);
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .category {
+    flex-direction: column;
+  }
+  
+  .photo,
+  .side {
+    height: auto;
+    width: 100%;
+  }
+  
+  .photo {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 10px;
+  }
+  
+  #price,
+  #discount {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .image {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    border: 3px solid #ddd;
+  }
+  
+  .side {
+    margin-left: 0;
+  }
+  
+  .marmeto {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .color-div {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .size-button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  
+  #cart {
+    width: 100%;
+  }
+  
+  #cart img {
+    margin-right: 10px;
+  }
+  
+  .counter {
+    width: 80%;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  
+  #description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .category {
+    flex-direction: row;
+  }
+  
+  .photo {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  
+  .side {
+    margin-left: 5%;
+    width: 45%;
+    margin-top: 0; 
+  }
+  
+  .photos {
+    gap: 15px;
+  }
+  
+  #price,
+  #discount {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .image {
+    width: 25%;
+  }
+  
+  .marmeto {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .color-div {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .size-button {
+    margin: 8px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  #cart {
+    width: 100%;
+  }
+  
+  #cart img {
+    margin-right: 12px;
+  }
+  
+  .counter {
+    margin-top: 12px;
+  }
+  
+  #description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
